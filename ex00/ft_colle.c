@@ -38,21 +38,21 @@ void	ft_prt(int pcode, int x, int y)
 
 int		ft_get_pcode(t_ptn *t, int x, int y)
 {
-	if (x == 1 & y == 1)
+	if (x == 1 && y == 1)
 		return (dect_ptn11(t));
-	else if (x == 1 & y == 2)
+	else if (x == 1 && y == 2)
 		return (dect_ptn12(t));
-	else if (x == 1 & y >= 3)
+	else if (x == 1 && y >= 3)
 		return (dect_ptn13(t));
-	else if (x == 2 & y == 1)
+	else if (x == 2 && y == 1)
 		return (dect_ptn21(t));
-	else if (x >= 3 & y == 1)
+	else if (x >= 3 && y == 1)
 		return (dect_ptn31(t));
-	else if (x >= 3 & y == 2)
+	else if (x >= 3 && y == 2)
 		return (dect_ptn32(t));
-	else if (x == 2 & y >= 3)
+	else if (x == 2 && y >= 3)
 		return (dect_ptn23(t));
-	else if (x == 2 & y >= 2)
+	else if (x == 2 && y >= 2)
 		return (dect_ptn22(t));
 	else
 		return (dect_ptn33(t));

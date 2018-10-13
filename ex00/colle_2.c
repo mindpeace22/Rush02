@@ -24,7 +24,7 @@ int		main(void)
 	pcode = -1;
 	point = ft_read(1, 1, 0);
 	ft_cal_size(point, &x, &y);
-	if (point <= 0 || point->c == '\n')
+	if (point == NULL || point->c == '\n')
 	{
 		ft_print1(-1, 1, 1);
 		return (0);
